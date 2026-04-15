@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Headless CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <p class="title">MK</p>
+            </a>
+            <a class="navbar-burger" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Headless CMS
+                </a>
+                <a class="navbar-item" href="strapi.html">
+                    Strapi
+                </a>
+                <a class="navbar-item" href="contentful.html">
+                    Contentful
+                </a>
+                <a class="navbar-item" href="sanity.html">
+                    Sanity
+                </a>
+                <a class="navbar-item" href="compare.html">
+                    Сравнение
+                </a>
+                <a class="navbar-item" href="about.html">
+                    О сайте
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="section">
+        <div class="columns">
+            <div class="column is-2">
+                <aside class="menu">
+                    <!-- <p class="menu-label">General</p> -->
+                    <ul class="menu-list">
+                        <li><a href="strapi.html">Strapi</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <p class="title">Strapi</p>
+                    <div class="block">
+                        Strapi — это open-source CMS и Headless CMS, написанная на Node.js. Она
+                        позволяет разработчикам создавать и управлять контентом, а также предоставлять его через RESTful
+                        или
+                        GraphQL API. Strapi ориентирована на гибкость и расширяемость, позволяя пользователям
+                        настраивать
+                        систему под свои нужды.
+                    </div>
+                    <div class="block">
+                        Плюсы Strapi:
+                        <div class="content">
+                            <ol>
+                                <li>
+                                    Открытый исходный код: Strapi является проектом с открытым исходным кодом, что дает
+                                    возможность
+                                    разработчикам изучать и изменять код, а также участвовать в развитии проекта.
+                                </li>
+                                <li>
+                                    Гибкость и расширяемость: Предоставляет широкие возможности для настройки и
+                                    расширения
+                                    функционала через
+                                    плагины и модули. Это позволяет адаптировать систему под любые требования проекта.
+                                </li>
+                                <li>
+                                    Поддержка RESTful и GraphQL API: Генерирует API автоматически на основе структуры
+                                    контента,
+                                    что
+                                    упрощает
+                                    интеграцию с фронтендом и бэкендом. Поддержка обоих типов API даёт свободу выбора
+                                    подхода к
+                                    разработке.
+                                </li>
+                                <li>
+                                    Удобный административный интерфейс: Strapi поставляется с современным и удобным
+                                    административным
+                                    интерфейсом, который позволяет легко управлять контентом и пользователями. Интерфейс
+                                    доступен на
+                                    нескольких языках, включая английский, французский и испанский.
+                                </li>
+                                <li>
+                                    Интеграции и плагины: Поддерживает множество плагинов и интеграций с популярными
+                                    сервисами,
+                                    такими как
+                                    AWS S3, Algolia, SendGrid и многими другими. Это упрощает подключение необходимых
+                                    сервисов и
+                                    расширение
+                                    функционала.
+                                </li>
+                                <li>
+                                    Сообщество и поддержка: У Strapi есть активное сообщество разработчиков, которое
+                                    постоянно
+                                    выпускает
+                                    обновления и улучшения. Также существует обширная документация и форумы поддержки,
+                                    где
+                                    можно
+                                    найти
+                                    ответы на большинство вопросов.
+                                </li>
+                                <li>
+                                    Модульная архитектура: Модульная структура Strapi позволяет легко добавлять и
+                                    удалять
+                                    функциональные
+                                    блоки, что делает систему очень гибкой и адаптируемой.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="block">
+                        Минусы Strapi:
+                        <div class="content">
+                            <ol>
+                                <li>
+                                    Сложность настройки и развертывания: Настройка и развертывание Strapi могут быть
+                                    сложными
+                                    для начинающих разработчиков, особенно если проект требует нестандартных настроек
+                                    или
+                                    интеграций.
+                                </li>
+                                <li>
+                                    Ограниченная функциональность "из коробки": Хотя он предоставляет базовые функции
+                                    для
+                                    управления контентом, многие дополнительные функции требуют установки и настройки
+                                    плагинов,
+                                    что может увеличить время разработки.
+                                </li>
+                                <li>
+                                    Производительность и масштабируемость: При работе с большими объемами данных или
+                                    высокой
+                                    нагрузкой Strapi может столкнуться с проблемами производительности. В таких случаях
+                                    может
+                                    потребоваться дополнительное оптимизирование и настройка инфраструктуры.
+                                </li>
+                                <li>
+                                    Зависимость от Node.js: Так как Strapi написана на Node.js, она требует наличия
+                                    соответствующей среды выполнения и навыков работы с этим языком. Это может
+                                    ограничить
+                                    круг
+                                    потенциальных разработчиков.
+                                </li>
+                                <li>
+                                    Недостаточная зрелость некоторых модулей: Некоторые модули и плагины могут быть
+                                    недостаточно
+                                    зрелыми или плохо документированными, что может вызывать трудности при их
+                                    использовании.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                2026 Каракчиев Максим
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

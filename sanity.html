@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Headless CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <p class="title">MK</p>
+            </a>
+            <a class="navbar-burger" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Headless CMS
+                </a>
+                <a class="navbar-item" href="strapi.html">
+                    Strapi
+                </a>
+                <a class="navbar-item" href="contentful.html">
+                    Contentful
+                </a>
+                <a class="navbar-item" href="sanity.html">
+                    Sanity
+                </a>
+                <a class="navbar-item" href="compare.html">
+                    Сравнение
+                </a>
+                <a class="navbar-item" href="about.html">
+                    О сайте
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="section">
+        <div class="columns">
+            <div class="column is-2">
+                <aside class="menu">
+                    <!-- <p class="menu-label">General</p> -->
+                    <ul class="menu-list">
+                        <li><a href="sanity.html">Sanity</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <p class="title">Sanity</p>
+                    <div class="block">
+                        Это проприетарное SaaS-приложение для управления контентом. Sanity контролирует уровень хранения
+                        и
+                        предлагает настраиваемый язык запросов GROQ для поиска. Работа с контентом осуществляется через
+                        платформу Sanity Studio.
+                    </div>
+                    <div class="block">
+                        У Sanity есть бесплатная версия, но она содержит в себе ограничения. Например, в ней нет
+                        возможности
+                        хранения истории версий и записей событий, а также доступно только 3 пользователя. Платные
+                        тарифы
+                        начинаются от $99/мес. за проект.
+                    </div>
+                    <div class="block">
+                        Коробочная версия содержит в себе все необходимое для работы: подключаемые плагины,
+                        предварительный
+                        просмотр в реальном времени, функционал совместной работы в режиме реального времени и редактор
+                        с
+                        открытым исходным кодом, созданный с помощью JavaScript и React, который разработчики могут
+                        изменять
+                        под
+                        необходимые задачи.
+                    </div>
+                    <div class="block">
+                        Плюсы:
+                        <div class="content">
+                            <ol>
+                                <li>
+                                    Широкие возможности настройки.
+                                </li>
+                                <li>
+                                    Поддержка React для возможности кастомизации интерфейса.
+                                </li>
+                                <li>
+                                    Функционал предварительного просмотра.
+                                </li>
+                                <li>
+                                    Возможность многопользовательского редактирования контента в режиме реального
+                                    времени.
+                                </li>
+                                <li>
+                                    Персонализированный документооборот.
+                                </li>
+                                <li>
+                                    В корпоративном плане доступен настраиваемый контроль доступа.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="block">
+                            Минусы:
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        Стоимость лицензии довольно дорогая: для организации с 20 пользователями она
+                                        стоит
+                                        почти
+                                        $1000 в месяц.
+                                    </li>
+                                    <li>
+                                        Чтобы использовать Sanity в полной мере, необходимы технические знания для
+                                        первоначальной настройки продукта.
+                                    </li>
+                                    <li>
+                                        Ограниченные возможности для настройки бэкенда.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                2026 Каракчиев Максим
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

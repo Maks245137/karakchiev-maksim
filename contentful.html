@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Headless CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <p class="title">MK</p>
+            </a>
+            <a class="navbar-burger" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Headless CMS
+                </a>
+                <a class="navbar-item" href="strapi.html">
+                    Strapi
+                </a>
+                <a class="navbar-item" href="contentful.html">
+                    Contentful
+                </a>
+                <a class="navbar-item" href="sanity.html">
+                    Sanity
+                </a>
+                <a class="navbar-item" href="compare.html">
+                    Сравнение
+                </a>
+                <a class="navbar-item" href="about.html">
+                    О сайте
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="section">
+        <div class="columns">
+            <div class="column is-2">
+                <aside class="menu">
+                    <!-- <p class="menu-label">General</p> -->
+                    <ul class="menu-list">
+                        <li><a href="contentful.html">Contentful</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <p class="title">Contentful</p>
+                    <div class="block">
+                        Contentful — это API-first (ориентированная на программные интерфейсы) платформа управления
+                        контентом,
+                        основанная в 2013 году в Берлине.
+                        По сути, она работает как «бэкенд для контента»: вы создаете
+                        структуры данных, наполняете их текстом, изображениями и видео, а затем через гибкие API
+                        (включая
+                        GraphQL) доставляете этот контент на любые устройства.
+                    </div>
+                    <div class="block">
+                        Это решение широко используется как стартапами, так и крупными корпорациями — почти 30% компаний
+                        из
+                        списка Fortune 500 доверяют Contentful свои цифровые проекты.
+                    </div>
+                    <div class="block">
+                        Плюсы:
+                        <div class="content">
+                            <ol>
+                                <li>
+                                    Гибкость и масштабируемость. Платформа выдерживает колоссальные нагрузки — более 180
+                                    млрд
+                                    API-вызовов в месяц. Контент легко структурируется и переиспользуется.
+                                </li>
+                                <li>
+                                    Удобство для разработчиков. Чистый API, отличная документация и поддержка GraphQL.
+                                </li>
+                                <li>
+                                    Скорость публикации. Маркетологи могут обновлять сайт самостоятельно, без помощи
+                                    IT-отдела.
+                                </li>
+                                <li>
+                                    Мультиязычность. Встроенная поддержка множества локалей упрощает выход на глобальные
+                                    рынки.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="block">
+                        Минусы:
+                        <div class="content">
+                            <ol>
+                                <li>
+                                    Порог входа для редакторов. Пользователям, привыкшим к визуальному редактору
+                                    WordPress,
+                                    сложно освоить «модульную» структуру и концепцию «вложенности» записей.
+                                </li>
+                                <li>
+                                    Ограничения UI. Интерфейс может показаться «глючным» при работе с тысячами записей,
+                                    не
+                                    хватает некоторых функций массового редактирования.
+                                </li>
+                                <li>
+                                    Цена. Для больших проектов лицензия может быть дороже, чем у open-source аналогов, а
+                                    бесплатный тариф сильно урезан по функционалу.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                2026 Каракчиев Максим
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

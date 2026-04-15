@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Headless CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <p class="title">MK</p>
+            </a>
+            <a class="navbar-burger" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Headless CMS
+                </a>
+                <a class="navbar-item" href="strapi.html">
+                    Strapi
+                </a>
+                <a class="navbar-item" href="contentful.html">
+                    Contentful
+                </a>
+                <a class="navbar-item" href="sanity.html">
+                    Sanity
+                </a>
+                <a class="navbar-item" href="compare.html">
+                    Сравнение
+                </a>
+                <a class="navbar-item" href="about.html">
+                    О сайте
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="section">
+        <div class="columns">
+            <div class="column is-2">
+                <aside class="menu">
+                    <!-- <p class="menu-label">General</p> -->
+                    <ul class="menu-list">
+                        <li><a href="compare.html">Сравнение</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div class="block">
+                        <p class="title">Сравнение</p>
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Характеристика
+                                        </th>
+                                        <th>
+                                            Strapi
+                                        </th>
+                                        <th>
+                                            Contentful
+                                        </th>
+                                        <th>
+                                            Sanity
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Лучше всего для
+                                        </th>
+                                        <td>
+                                            Разработчиков, которым нужен полный контроль над инфраструктурой и данные
+                                            должны
+                                            храниться локально.
+                                        </td>
+                                        <td>
+                                            Крупных предприятий (Enterprise), которым нужна надежность, поддержка и
+                                            готовые
+                                            инструменты для персонализации.
+                                        </td>
+                                        <td>
+                                            Команд, работающих в реальном времени над сложными структурами данных
+                                            (каталоги,
+                                            документы).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Модель и лицензия
+                                        </th>
+                                        <td>
+                                            Open-Source (MIT). Можно ставить бесплатно куда угодно. Есть платный
+                                            Cloud-хостинг.
+                                        </td>
+                                        <td>
+                                            SaaS (проприетарная). Закрытая облачная платформа с тарифами за
+                                            использование.
+                                        </td>
+                                        <td>
+                                            SaaS (проприетарная). Облачная платформа, но со встроенной кастомизацией
+                                            через
+                                            код.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Стоимость (Старт)
+                                        </th>
+                                        <td>
+                                            Бесплатно (Self-hosted).
+                                            Облако: от $15/мес (проект) до $99/мес.
+                                        </td>
+                                        <td>
+                                            Бесплатно (ограниченно).
+                                            Lite: $300/мес.
+                                            Premium: Индивидуально.
+                                        </td>
+                                        <td>
+                                            Бесплатно (до 20 пользователей).
+                                            Growth: $15/мес за место.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Админ-панель (UI)
+                                        </th>
+                                        <td>
+                                            Генерируется автоматически из кода. Можно менять через плагины (React).
+                                        </td>
+                                        <td>
+                                            Фиксированный интерфейс. Вы выглядит одинаково для всех, кастомизация
+                                            ограничена.
+                                        </td>
+                                        <td>
+                                            Полностью кастомная (React). Вы сами строите Studio так, как нужно вашей
+                                            команде.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            API и запросы
+                                        </th>
+                                        <td>
+                                            REST + GraphQL (генерируются автоматически под вашу модель).
+                                        </td>
+                                        <td>
+                                            REST + GraphQL (промышленные стандарты, высокая производительность).
+                                        </td>
+                                        <td>
+                                            REST + GROQ (уникальный язык запросов, как "SQL для JSON", очень гибкий).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Редактирование в реальном времени
+                                        </th>
+                                        <td>
+                                            (Нет встроенной функции; пользователи блокируют документы).
+                                        </td>
+                                        <td>
+                                            (Есть, но в основном в старших тарифах).
+                                        </td>
+                                        <td>
+                                            Сильная сторона. Одновременная работа нескольких редакторов без блокировок.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Хостинг
+                                        </th>
+                                        <td>
+                                            Вы сами отвечаете за сервер (AWS, DigitalOcean и др.) или покупаете облако
+                                            Strapi.
+                                        </td>
+                                        <td>
+                                            Полностью управляемый облачный сервис (SaaS). Не нужно думать о серверах.
+                                        </td>
+                                        <td>
+                                            Полностью управляемый облачный сервис (SaaS).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            AI Функции
+                                        </th>
+                                        <td>
+                                            Средние (генерация контента через плагины / Strapi AI).
+                                        </td>
+                                        <td>
+                                            Сильные (AI Actions: генерация, перевод, персонализация как платные
+                                            надстройки).
+                                        </td>
+                                        <td>
+                                            Продвинутые (Content Agent: может исследовать и обновлять тысячи документов
+                                            по
+                                            вашей схеме).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Интеграция с Next.js/React
+                                        </th>
+                                        <td>
+                                            Отличная, но требует настройки деплоя и превью.
+                                        </td>
+                                        <td>
+                                            Отличная, готовая инфраструктура, но дорогая при росте трафика.
+                                        </td>
+                                        <td>
+                                            Отличная, родной React-компонент Studio и живой превью из коробки.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Контроль данных (Sovereignty)
+                                        </th>
+                                        <td>
+                                            Полный (вы хозяин данных, так как сервер ваш).
+                                        </td>
+                                        <td>
+                                            Нет (данные хранятся в облаке Contentful).
+                                        </td>
+                                        <td>
+                                            Нет (данные хранятся в облаке Sanity).
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad animi ut, eum facere fugiat nihil
+                        officiis cupiditate inventore mollitia debitis excepturi cum, ipsum odio atque quod totam a!
+                        Fuga,
+                        perferendis!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                2026 Каракчиев Максим
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

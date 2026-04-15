@@ -1,0 +1,9 @@
+body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* минимальная высота = высота экрана */
+        }
+
+main {
+            flex: 1; /* занимает всё свободное место */
+        }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Headless CMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <p class="title">MK</p>
+            </a>
+            <a class="navbar-burger" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Headless CMS
+                </a>
+                <a class="navbar-item" href="strapi.html">
+                    Strapi
+                </a>
+                <a class="navbar-item" href="contentful.html">
+                    Contentful
+                </a>
+                <a class="navbar-item" href="sanity.html">
+                    Sanity
+                </a>
+                <a class="navbar-item" href="compare.html">
+                    Сравнение
+                </a>
+                <a class="navbar-item" href="about.html">
+                    О сайте
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="section">
+        <div class="columns">
+            <div class="column is-2">
+                <aside class="menu">
+                    <!-- <p class="menu-label">General</p> -->
+                    <ul class="menu-list">
+                        <li><a href="index.html">Headless CMS</a></li>
+                        <li><a href="index-pg2.html">Отличие Headless CMS от обычных</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div class="block">
+                        <p class="title is-5">Отличие Headless CMS от обычных</p>
+                        <img src="imgs/img1.png" alt="Отиличе headless cms" title="Отиличе headless cms">
+                    </div>
+                    <div class="block">
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Характеристика
+                                        </th>
+                                        <th>
+                                            Обычная CMS
+                                        </th>
+                                        <th>
+                                            Headless CMS
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Фронтенд</th>
+                                        <td>
+                                            Встроенный, привязан к движку. Темы/шаблоны определяют вывод.
+                                        </td>
+                                        <td>
+                                            Полностью отдельный. Любой язык/фреймворк (React, Vue, iOS, Android).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>API-first</th>
+                                        <td>
+                                            API есть, но часто ограничен или не является основным способом доступа.
+                                        </td>
+                                        <td>
+                                            API - единственный способ доступа к контенту.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Гибкость отображения</th>
+                                        <td>
+                                            Низкая - вы привязаны к системе шаблонов CMS.
+                                        </td>
+                                        <td>
+                                            Абсолютная - вы сами верстаете и программируете вывод.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Каналы доставки</th>
+                                        <td>
+                                            В основном веб (HTML-страницы).
+                                        </td>
+                                        <td>
+                                            Любые: веб, мобильные приложения, IoT, чат-боты, киоски, AR/VR.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Производительность</th>
+                                        <td>
+                                            Часто тяжелее, особенно при высоких нагрузках.
+                                        </td>
+                                        <td>
+                                            Легковеснее - бэкенд только отдает данные, CDN статику.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Удобство редакторов</th>
+                                        <td>
+                                            WYSIWYG, немедленное предпросмотр на странице.
+                                        </td>
+                                        <td>
+                                            Требуется отдельный предпросмотр или доверие к API.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                2026 Каракчиев Максим
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>
